@@ -11,4 +11,4 @@ set ai
 set hlsearch
 
 
-
+colorscheme elflord
