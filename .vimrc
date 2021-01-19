@@ -9,6 +9,8 @@ set shiftwidth=2
 set expandtab
 set ai
 set hlsearch
+highlight Comment ctermfg=green
 
 
-colorscheme elflord
+" colorschemeの設定
+" colorscheme elflord
