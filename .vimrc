@@ -12,4 +12,4 @@ set hlsearch
 " highlight Comment ctermfg=green
 
 " colorschemeの設定
-colorscheme elflord
+"colorscheme elflord
