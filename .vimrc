@@ -11,5 +11,8 @@ set ai
 set hlsearch
 highlight Comment ctermfg=green
 
+" filetypeによって設定を変える
+filetype plugin indent on
+
 " colorschemeの設定
 "colorscheme elflord
