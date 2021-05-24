@@ -22,3 +22,4 @@ alias emacsn='emacs -nw --color'
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="~/Library/Python/3.9/bin:$PATH"
