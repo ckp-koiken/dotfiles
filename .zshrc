@@ -18,6 +18,15 @@ eval "$(nodenv init -)"
 # alias
 alias emacsn='emacs -nw --color'
 
+# zsh-completionsの設定
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+
 # 環境変数
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
