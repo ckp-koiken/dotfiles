@@ -15,9 +15,6 @@ highlight Comment ctermfg=green
 filetype plugin indent on
 
 " filetypeに合わせたインデントを利用
-"" python
-autocmd FileType python setlocal shiftwidth=4 tabstop=8 expandtab
-
 "" makefile
 autocmd FileType make setlocal shiftwidth=8 tabstop=8 noexpandtab
 
