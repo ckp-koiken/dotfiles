@@ -15,6 +15,9 @@ eval "$(pyenv init --path)"
 export PATH="$HOME/.nodenv/versions:$PATH"
 eval "$(nodenv init -)"
 
+# nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # alias
 alias emacsn='emacs -nw --color'
 
