@@ -1,5 +1,5 @@
 # prompt
-PROMPT='%n@%m %F{green}%~%f$ ' 
+PROMPT='%n@%m:%F{green}%~%f$ ' 
 
 # ls-color
 #alias ls="ls -GF"
