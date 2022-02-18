@@ -2,9 +2,9 @@
 PROMPT='%n@%m:%F{green}%~%f$ ' 
 
 # ls-color
-#alias ls="ls -GF"
+alias ls="ls -G"
 #coreutilsでglsコマンドを有効にしている
-alias ls="gls --color"
+#alias ls="gls --color"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
