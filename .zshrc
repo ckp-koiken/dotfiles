@@ -4,6 +4,8 @@ PROMPT='%n@%m:%B%F{yellow}%~%f%b$ '
 
 # ls-color
 alias ls="ls -G"
+export CLICOLOR=1
+export LSCOLORS=ExFxcxdxbxegedabagacad
 #coreutilsでglsコマンドを有効にしている
 #alias ls="gls --color"
 
@@ -32,6 +34,4 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="~/Library/Python/3.9/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
-export CLICOLOR=1
-export LSCOLORS=ExFxcxdxbxegedabagacad
 
