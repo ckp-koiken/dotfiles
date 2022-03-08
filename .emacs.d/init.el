@@ -24,6 +24,13 @@
 ;; 自動保存リストファイルを作成しない
 (setq auto-save-list-file-prefix nil)
 
+;; ウィンドウの移動をesc+矢印にする
+(global-set-key (kbd "ESC <right>") 'windmove-right)
+(global-set-key (kbd "ESC <left>") 'windmove-left)
+(global-set-key (kbd "<M-right>") 'windmove-right)
+(global-set-key (kbd "<M-left>") 'windmove-left)
+(setq windmove-wrap-around t)
+
 
 
 ;; Makefileを書くときはtab文字にする
