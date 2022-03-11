@@ -1,6 +1,14 @@
 # dotfiles
-* 各設定ファイル用のリポジトリ
+* 各設定ファイル用のリポジトリ(Mac用)
 * dotfilesLink.shを実行することでシンボリックリンクが張られる
-    * .vimrc
-    * .tmux.conf
-    * .latexmkrc
+  * .vimrc
+  * .tmux.conf
+  * .latexmkrc
+  * .screenrc
+  * .zshrc
+  * .emacs.d/
+* vscode用設定
+  * settings.json
+  * keybindings.json
+  * extensions
+  * code_settings.shを実行することで同じようにシンボリックリンクが貼られる
