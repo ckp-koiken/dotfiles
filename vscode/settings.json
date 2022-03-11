@@ -1,0 +1,60 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+             "-e",
+             "$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+             "-e",
+             "$bibtex=q/upbibtex %O %B/",
+             "-e",
+             "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+             "-e",
+             "$makeindex=q/upmendex %O -o %D %S/",
+             "-e",
+             "$dvipdf=q/dvipdfmx %O -o %D %S/",
+             "-norc",
+             "-pdfdvi",
+             "%DOC%"
+            ]
+        }
+        ],
+    // latex-workshopは保存時に自動ビルドされる。無効化するには以下のように。
+    // "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.view.pdf.viewer": "tab",
+
+    // 入力したときにどの項目にカーソルを合わせた状態にするか
+    "editor.suggestSelection": "first",
+
+    // pythonとかJavaのコードアシスト（おまじない）
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    // 同期中に無視される拡張機能
+    "settingsSync.ignoredExtensions": [],
+
+    // コードの折返しをONにする
+    "editor.wordWrap": "on",
+
+    // tabのサイズを2に
+    "editor.tabSize": 2,
+    
+    // "python.pythonPath": "/usr/local/opt/python@3.9/bin/python3.9", //非推奨になっている
+
+    // jupyter notebookの拡張
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "python.defaultInterpreterPath": "/usr/local/opt/python@3.9/bin/python3.9", 
+    
+    // c言語の補完を修正
+    "C_Cpp.intelliSenseEngineFallback": "Enabled", 
+
+    // macros: C-kの後にC-yでヤンクできるようにする
+    "macros": {
+        "cutLines": [
+            "cursorEndSelect",
+            "editor.action.clipboardCutAction"
+        ]
+    },
+}

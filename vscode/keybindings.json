@@ -1,0 +1,9 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+  { "key": "ctrl+y", "command":"execPaste", "when":"editorTextFocus"},
+  {
+    "key": "ctrl+k",
+    "command": "macros.cutLines",
+    "when": "!editorHasSelection"
+  },
+]
