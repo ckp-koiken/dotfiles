@@ -27,6 +27,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # alias
 alias emacsn='emacs -nw --color'
 
+# go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin 
+
 
 # 環境変数
 export PATH="/usr/local/opt/ruby/bin:$PATH"
