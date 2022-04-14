@@ -43,7 +43,8 @@
 
     // jupyter notebookの拡張
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter.notebook.ipynb",
+        "*.pdf": "latex-workshop-pdf-hook"
     },
     "python.defaultInterpreterPath": "/usr/local/opt/python@3.9/bin/python3.9", 
     
