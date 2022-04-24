@@ -7,5 +7,7 @@ set shiftwidth=2
 set expandtab
 set ai
 set hlsearch
-highlight Comment ctermfg=green
+"highlight Comment ctermfg=green
+highlight Comment ctermfg=red
+highlight Comment cterm=BOLD
 
