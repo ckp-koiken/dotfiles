@@ -8,5 +8,6 @@ set expandtab
 set ai
 set hlsearch
 colorscheme ron
-highlight Comment ctermfg=green
+highlight Comment ctermfg=red
+highlight Comment cterm=BOLD
 
