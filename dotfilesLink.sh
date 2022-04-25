@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if [ "$(uname)" == 'Darwin' ]; then
   ln -sf ~/dotfiles/.vimrc ~/.vimrc
   ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf

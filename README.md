@@ -1,13 +1,20 @@
 # dotfiles
-* 各設定ファイル用のリポジトリ(Mac用)
+* 各設定ファイル用のリポジトリ(Mac/Linux用)
 * dotfilesLink.shを実行することでシンボリックリンクが張られる
-  * .vimrc
-  * .tmux.conf
-  * .latexmkrc
-  * .screenrc
-  * .zshrc
-  * .emacs.d/
-* vscode用設定
+  * OSごとに設定されるファイルを分岐
+  * mac
+    * .vimrc
+    * .tmux.conf
+    * .screenrc
+    * .emacs.d/
+    * .zshrc
+    * .latexmkrc
+  * Linux
+    * .vimrc
+    * .tmux.conf
+    * .screenrc
+    * .emacs.d/
+* vscode用設定(Mac用)
   * settings.json
   * keybindings.json
   * extensions
