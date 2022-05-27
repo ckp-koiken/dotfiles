@@ -7,7 +7,7 @@ set shiftwidth=2
 set expandtab
 set ai
 set hlsearch
-colorscheme ron
+colorscheme default
 highlight Comment ctermfg=red
 highlight Comment cterm=BOLD
 
