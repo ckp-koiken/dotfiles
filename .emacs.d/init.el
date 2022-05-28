@@ -1,6 +1,9 @@
 ;; カラム番号も表示する
 (column-number-mode t)
 
+;; 行番号を表示する
+(global-linum-mode t)
+
 ;; タブ文字ではなくスペースを使う
 (setq-default indent-tabs-mode nil)
 
@@ -29,6 +32,10 @@
 (global-set-key (kbd "ESC <left>") 'windmove-left)
 (global-set-key (kbd "<M-right>") 'windmove-right)
 (global-set-key (kbd "<M-left>") 'windmove-left)
+(global-set-key (kbd "ESC <up>") 'windmove-up)
+(global-set-key (kbd "ESC <down>") 'windmove-down)
+(global-set-key (kbd "<M-up>") 'windmove-up)
+(global-set-key (kbd "<M-down>") 'windmove-down)
 (setq windmove-wrap-around t)
 
 
@@ -45,8 +52,6 @@
 ;; タイトルパーにファイルのフルパスを表示する
 ;; (setq frame-title-format "%f")
 
-;; 行番号を表示する
-;; (global-linum-mode t)
 
 ;; カーソルのある行をハイライトする
 ;; (global-hl-line-mode t)
