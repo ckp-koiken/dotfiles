@@ -1,6 +1,6 @@
 # prompt
-# PROMPT='%n@%m:%B%F{green}%~%f%b$ ' 
-PROMPT='%B%n@%m%b:%B%F{yellow}%~%f%b$ '
+PROMPT='%n@%m:%B%F{green}%~%f%b$ ' 
+# PROMPT='%B%n@%m%b:%B%F{yellow}%~%f%b$ '
 
 # ls-color
 alias ls="ls -G"
