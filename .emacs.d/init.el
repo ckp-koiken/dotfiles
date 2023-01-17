@@ -49,6 +49,10 @@
     (setq indent-tabs-mode t))))
 
 
+;; 各種アクションを定義
+(global-set-key "\C-\\" 'undo)
+(global-set-key "\M-g" 'goto-line)
+(global-set-key "\C-l" 'recenter)
 
 
 
