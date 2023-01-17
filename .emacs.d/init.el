@@ -27,6 +27,11 @@
 ;; 自動保存リストファイルを作成しない
 (setq auto-save-list-file-prefix nil)
 
+;; ターミナルの背景をダークモードに(default はlight）
+(add-hook 'tty-setup-hook
+          '(lambda ()
+             (set-terminal-parameter nil 'background-mode 'dark)))
+
 ;; ウィンドウの移動をesc+矢印にする
 (global-set-key (kbd "ESC <right>") 'windmove-right)
 (global-set-key (kbd "ESC <left>") 'windmove-left)
@@ -37,8 +42,6 @@
 (global-set-key (kbd "<M-up>") 'windmove-up)
 (global-set-key (kbd "<M-down>") 'windmove-down)
 (setq windmove-wrap-around t)
-
-
 
 ;; Makefileを書くときはtab文字にする
 (add-hook 'makefile-mode-hook
