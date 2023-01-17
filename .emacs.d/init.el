@@ -15,7 +15,7 @@
 (prefer-coding-system 'utf-8)
 
 ;; コメントアウトの色を変更
-;; (set-face-foreground 'font-lock-comment-face "white")
+(set-face-foreground 'font-lock-comment-face "red")
 (set-face-bold-p 'font-lock-comment-face t)
 
 ;; *.~ とかのバックアップファイルを作らない
