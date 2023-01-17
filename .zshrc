@@ -25,7 +25,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 
 # alias
-alias emacsn='emacs -nw --color'
+alias emacsn='emacs -nw'
 
 # go
 export GOPATH=$HOME/go
