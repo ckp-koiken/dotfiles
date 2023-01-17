@@ -48,6 +48,9 @@
   (function (lambda ()
     (setq indent-tabs-mode t))))
 
+;; Pythonを書くときのインデントをスペース2つにする
+(add-hook 'python-mode-hook '(lambda () 
+                               (setq python-indent 2)))
 
 ;; 各種アクションを定義
 (global-set-key "\C-\\" 'undo)
