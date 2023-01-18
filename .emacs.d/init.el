@@ -18,7 +18,7 @@
 ;; (load-theme 'manoj-dark t)
 
 ;; コメントアウトの色を変更
-(set-face-foreground 'font-lock-comment-face "green")
+(set-face-foreground 'font-lock-comment-face "white")
 (set-face-bold-p 'font-lock-comment-face t)
 
 ;; *.~ とかのバックアップファイルを作らない
