@@ -14,8 +14,11 @@
 (set-language-environment "Japanese")
 (prefer-coding-system 'utf-8)
 
+;; themeを指定
+;; (load-theme 'manoj-dark t)
+
 ;; コメントアウトの色を変更
-(set-face-foreground 'font-lock-comment-face "red")
+(set-face-foreground 'font-lock-comment-face "green")
 (set-face-bold-p 'font-lock-comment-face t)
 
 ;; *.~ とかのバックアップファイルを作らない
@@ -31,6 +34,8 @@
 (add-hook 'tty-setup-hook
           '(lambda ()
              (set-terminal-parameter nil 'background-mode 'dark)))
+
+
 
 ;; ウィンドウの移動をesc+矢印にする
 (global-set-key (kbd "ESC <right>") 'windmove-right)
