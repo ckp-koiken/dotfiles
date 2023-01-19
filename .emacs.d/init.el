@@ -14,12 +14,12 @@
 (set-language-environment "Japanese")
 (prefer-coding-system 'utf-8)
 
-;; themeを指定
+;; 組み込みthemeを指定
 ;; (load-theme 'manoj-dark t)
 
 ;; コメントアウトの色を変更
-(set-face-foreground 'font-lock-comment-face "white")
-(set-face-bold-p 'font-lock-comment-face t)
+;; (set-face-foreground 'font-lock-comment-face "white")
+;; (set-face-bold-p 'font-lock-comment-face t)
 
 ;; *.~ とかのバックアップファイルを作らない
 (setq make-backup-files nil)
@@ -30,12 +30,15 @@
 ;; 自動保存リストファイルを作成しない
 (setq auto-save-list-file-prefix nil)
 
-;; ターミナルの背景をダークモードに(default はlight）
-(add-hook 'tty-setup-hook
-          '(lambda ()
-             (set-terminal-parameter nil 'background-mode 'dark)))
+;; CUIの背景をダークモードに
+(when (not window-system)
+  (set-terminal-parameter nil 'background-mode 'dark)
+  )
 
-
+;; GUIの背景をダークモードに
+(when window-system
+  (invert-face 'default)  
+  )
 
 ;; ウィンドウの移動をesc+矢印にする
 (global-set-key (kbd "ESC <right>") 'windmove-right)
@@ -65,7 +68,7 @@
 
 
 ;; タイトルパーにファイルのフルパスを表示する
-;; (setq frame-title-format "%f")
+(setq frame-title-format "%f")
 
 
 ;; カーソルのある行をハイライトする
