@@ -60,6 +60,12 @@
 (add-hook 'python-mode-hook '(lambda () 
                                (setq python-indent 2)))
 
+;; JavaScriptを書く時のインデントをスペース2つにする
+(add-hook 'js-mode-hook
+          (lambda ()
+            (make-local-variable 'js-indent-level)
+            (setq js-indent-level 2)))
+
 ;; 各種アクションを定義
 (global-set-key "\C-\\" 'undo)
 (global-set-key "\M-g" 'goto-line)
@@ -67,8 +73,11 @@
 
 
 
-;; タイトルパーにファイルのフルパスを表示する
-(setq frame-title-format "%f")
+;; タイトルバーの表示設定
+;; (setq frame-title-format "%f")
+;; emacs27以前の表示設定
+(setq frame-title-format '(multiple-frames "%b"
+                                           ("" invocation-name "@" system-name)))
 
 
 ;; カーソルのある行をハイライトする
