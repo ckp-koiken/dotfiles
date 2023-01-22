@@ -30,6 +30,9 @@
 ;; 自動保存リストファイルを作成しない
 (setq auto-save-list-file-prefix nil)
 
+;; emacsサーバーの開始
+(server-start)
+
 ;; CUIの背景をダークモードに
 (when (not window-system)
   (set-terminal-parameter nil 'background-mode 'dark)
