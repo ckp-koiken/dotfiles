@@ -2,7 +2,7 @@
 (column-number-mode t)
 
 ;; 行番号を表示する
-(global-linum-mode t)
+(global-display-line-numbers-mode t)
 
 ;; タブ文字ではなくスペースを使う
 (setq-default indent-tabs-mode nil)
