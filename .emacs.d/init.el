@@ -83,4 +83,5 @@
 ;; カーソルのある行をハイライトする
 ;; (global-hl-line-mode t)
 
-
+;; 閉じカッコを補完する
+(electric-pair-mode 1)
