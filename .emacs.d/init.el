@@ -85,3 +85,6 @@
 
 ;; 閉じカッコを補完する
 (electric-pair-mode 1)
+
+;; 対応するカッコを強調表示する
+(show-paren-mode t)
