@@ -44,4 +44,4 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="~/Library/Python/3.9/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
-
+export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH" # apple silicon
