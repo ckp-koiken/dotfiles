@@ -66,6 +66,12 @@
             (make-local-variable 'js-indent-level)
             (setq js-indent-level 2)))
 
+;; Javaを書く時のインデントをスペース2つにする
+(add-hook 'java-mode-hook
+	        (lambda ()
+	          (setq indent-tabs-mode nil)
+	          (setq c-basic-offset 2)))
+
 ;; 各種アクションを定義
 (global-set-key "\C-\\" 'undo)
 (global-set-key "\M-g" 'goto-line)
