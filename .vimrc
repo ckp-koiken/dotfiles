@@ -13,19 +13,19 @@ set bg=dark
 " set bg=light
 " colorscheme default
 " highlight Comment ctermfg=red
-" highlight Comment ctermfg=green
-" highlight Comment cterm=BOLD
+highlight Comment ctermfg=green
+highlight Comment cterm=BOLD
 
 " Status Line Settings
-set statusline=%F " Show file name
-set statusline+=%m " Show modification
-set statusline+=%r " Show if readonly
-set statusline+=%h " Show if help
-set statusline+=%w " Show if preview
-set statusline+=:%l,%c " Show line & column number
-set statusline+=%= " align right after this
-set statusline+=\ %Y[%{&fileencoding}] " file encoding
+" set statusline=%F " Show file name
+" set statusline+=%m " Show modification
+" set statusline+=%r " Show if readonly
+" set statusline+=%h " Show if help
+" set statusline+=%w " Show if preview
+" set statusline+=:%l,%c " Show line & column number
+" set statusline+=%= " align right after this
+" set statusline+=\ %Y[%{&fileencoding}] " file encoding
 set laststatus=2 " Show status line (0:never, 1:two or more windows, 2:always)
 
 " hi StatusLine cterm=NONE gui=NONE ctermfg=white ctermbg=240
-hi StatusLine cterm=NONE gui=NONE ctermfg=black ctermbg=250
+ hi StatusLine cterm=NONE gui=NONE ctermfg=black ctermbg=250

@@ -35,9 +35,6 @@
 
     // コードの折返しをONにする
     "editor.wordWrap": "on",
-
-    // tabのサイズを2に
-    "editor.tabSize": 2,
     
     // "python.pythonPath": "/usr/local/opt/python@3.9/bin/python3.9", //非推奨になっている
 
