@@ -28,4 +28,4 @@ highlight Comment cterm=BOLD
 set laststatus=2 " Show status line (0:never, 1:two or more windows, 2:always)
 
 " hi StatusLine cterm=NONE gui=NONE ctermfg=white ctermbg=240
- hi StatusLine cterm=NONE gui=NONE ctermfg=black ctermbg=250
+" hi StatusLine cterm=NONE gui=NONE ctermfg=black ctermbg=250
